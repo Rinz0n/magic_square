@@ -22,7 +22,7 @@ int main() {
 
         switch (number) {
         case 1: {
-            cout << endl << "Введите размер магического квадрата нечётного порядка (нечётное число):"
+            cout << endl << "Введите размер магического квадрата нечётного порядка (нечётное число > или = 3):"
                 << endl;
             input_correct_size(size);
             sum = size * (size * size + 1) / 2;
@@ -50,4 +50,5 @@ int main() {
     } while (number != 2);
 
     return 0;
+
 }
