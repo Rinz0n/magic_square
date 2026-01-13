@@ -15,7 +15,7 @@ void input_correct_size(int& size) {
         cout << "Ошибка! Введите число" << endl;
         input_correct_size(size);
     }
-    if (size % 2 == 0 || size <= 0) {
+    if (size % 2 == 0 || size <= 1) {
         cout << endl << "Введён неверный размер магического квадрата" << endl;
         cout << "Пожалуйста, введите новый размер:" << endl;
         input_correct_size(size);
@@ -246,4 +246,5 @@ void addFile(const vector<vector<int>>& magicsquare, int size, const int width) 
         cout << "Не получилось открыть файл!";
     }
     ofile.close();
+
 }
